@@ -3,13 +3,14 @@ package com.iyed.users_microservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import com.iyed.users_microservice.service.UserService;
 
 
 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class UsersMicroserviceApplication {
 
 	@Autowired
